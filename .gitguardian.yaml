@@ -1,0 +1,8 @@
+version: 2
+
+secret:
+  ignored_matches:
+    - match: OTPUSER
+      name: placeholder key in template
+    - match: OTPPASS
+      name: placeholder key in template
