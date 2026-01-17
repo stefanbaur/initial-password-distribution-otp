@@ -18,4 +18,4 @@ Another way is to call `bin/print-password-sheet user1@example.com user2@example
 
 Once your users have been equipped with their OTP sheets, you can start setting their initial passwords. To do so, run `bin/set-initial-password user1@example.com user2@example.com ... usern@example.com` - this script will output the username, the row, the starting and the ending column where your users can find their initial password. It will then try to set the password for the user(s). The command that will be run can be specified in `etc/initpass.conf` as well.
 
-The `./install_update.sh` command will install the scripts and config files to `/opt/initial-password-distribution-otp` (this can be overridden by specifying the desired destination path as a command line parameter), and add symlinks in `/usr/local/sbin/`.
+The `./install_update.sh` command will install the scripts and config files to `/opt/initial-password-distribution-otp` (this can be overridden by specifying the desired destination path as a command line parameter), and will also add symlinks in `/usr/local/sbin/`.
