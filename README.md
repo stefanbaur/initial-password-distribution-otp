@@ -2,7 +2,7 @@
 
 This is a collection of scripts and templates to create physical One-Time-Pads for initial password distribution to users.
 
-The configuration is kept in the file `etc/initpass.conf`. This is the file where you define the desired password length and the parameters you wish to pass to `pwgen`. Note that the `-y` parameter seems to cause empty character fields sometimes, so we advise against using that one. The parameter combination `-cnB` seems to work reasonably well.
+The configuration is kept in the file `etc/initpass.conf`. This is the file where you define the desired password length and the parameters you wish to pass to `pwgen`. Note that the `-y` parameter seems to cause empty character fields sometimes, so we advise against using that one. The parameter combination `-cnB` seems to work reasonably well, but you could also use `-cnsB` for completely random passwords, rather than phoneme-based ones.
 
 You start by generating OTP sheets by calling `bin/generate-password-sheet user1@example.com user2@example.com ... usern@example.com`.
 
