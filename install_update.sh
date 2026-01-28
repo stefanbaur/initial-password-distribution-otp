@@ -15,7 +15,8 @@ if [ -s ${INSTALL_DIR}/etc/initpass.conf ] ; then
 	echo "Moving your old config to: '${INSTALL_DIR}/etc/initpass.conf.${TIMESTAMP}'"
 	mv ${INSTALL_DIR}/etc/initpass.conf ${INSTALL_DIR}/etc/initpass.conf.${TIMESTAMP}
 fi
-# copy all files to /opt/initial-password-distribution-otp/{bin,etc,data}
+
+# copy all files to $INSTALL_DIR/initial-password-distribution-otp/{bin,etc,data}
 rsync -aPvH {bin,etc,data} $INSTALL_DIR/
 
 # patch config file
